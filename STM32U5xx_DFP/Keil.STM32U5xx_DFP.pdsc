@@ -23,6 +23,7 @@
       - Remove Device:STM32Cube LL components
       - Remove compile device header from device description
       - Remove not used conditions
+      - Replace documentation files with permalinks
     </release>
     <release version="2.2.2-dev0">
       CMSIS Device:
@@ -133,8 +134,8 @@ The STM32U5 series offers advanced power-saving microcontrollers, based on Arm®
 Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the STM32U5 series of microcontrollers takes performance to the next level.
       </description>
 
-      <book name="Documentation/arm_cortex_m33_dgug_100235_0004_00_en.pdf"  title="Arm Cortex-M33 Devices"/>
-      <book name="Documentation/RM0456.pdf" title="STM32U575/585 Arm-based 32-bit MCUs Reference Manual"/>
+      <book name="https://developer.arm.com/documentation/100235/latest/"  title="Arm Cortex-M33 Devices"/>
+      <book name="https://www.st.com/resource/en/reference_manual/rm0456-stm32u5-series-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32U575/585 Arm-based 32-bit MCUs Reference Manual"/>
 
       <algorithm name="CMSIS/Flash/MX25LM51245G_STM32U575I-EVAL.FLM"    start="0x70000000" size="0x04000000" RAMstart="0x20000000" RAMsize="0xA0000" default="0" />
       <algorithm name="CMSIS/Flash/MX25LM51245G_STM32U585I_IOT02A.FLM"  start="0x70000000" size="0x04000000" RAMstart="0x20000000" RAMsize="0xA0000" default="0" />
@@ -599,7 +600,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U5F9xx"/>
         <debug svd="CMSIS/SVD/STM32U5Fx.svd"/>
 
-        <book name="Documentation/DS14395.pdf" title="STM32U5Fxxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5f7vj.pdf" title="STM32U5Fxxx Datasheet"/>
 
         <memory name="SRAM12356"    access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -673,7 +674,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <debug svd="CMSIS/SVD/STM32U5Gx.svd"/>
         <compile define="STM32U5G9xx"/>
 
-        <book name="Documentation/DS14102.pdf" title="STM32U5Gxxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5g7vj.pdf" title="STM32U5Gxxx Datasheet"/>
 
         <memory name="SRAM12356"    access="rwx" start="0x20000000"  size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000"  size="0x01000000" default="0" init="0" />
@@ -726,7 +727,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U5F7xx"/>
         <debug svd="CMSIS/SVD/STM32U5Fx.svd"/>
 
-        <book name="Documentation/DS14395.pdf" title="STM32U5Fxxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5f7vj.pdf" title="STM32U5Fxxx Datasheet"/>
 
         <memory name="SRAM12356"    access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -768,7 +769,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U5G7xx"/>
         <debug svd="CMSIS/SVD/STM32U5Gx.svd"/>
 
-        <book name="Documentation/DS14102.pdf" title="STM32U5Gxxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5g7vj.pdf" title="STM32U5Gxxx Datasheet"/>
 
         <memory name="SRAM12356"    access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -795,7 +796,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U595xx"/>
         <debug svd="CMSIS/SVD/STM32U595.svd"/>
 
-        <book name="Documentation/DS13633.pdf" title="STM32U59xxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u595ai.pdf" title="STM32U59xxx Datasheet"/>
 
         <memory name="SRAM1235"     access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -966,7 +967,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U5A5xx"/>
         <debug svd="CMSIS/SVD/STM32U5A5.svd"/>
 
-        <book name="Documentation/DS13543.pdf" title="STM32U5Axxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5a5aj.pdf" title="STM32U5Axxx Datasheet"/>
 
         <memory name="SRAM1235"     access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -1055,7 +1056,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U599xx"/>
         <debug svd="CMSIS/SVD/STM32U599.svd"/>
 
-        <book name="Documentation/DS13633.pdf" title="STM32U59xxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u595ai.pdf" title="STM32U59xxx Datasheet"/>
 
         <memory name="SRAM1235"     access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -1144,7 +1145,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U5A9xx"/>
         <debug svd="CMSIS/SVD/STM32U5A9.svd"/>
 
-        <book name="Documentation/DS13543.pdf" title="STM32U5Axxx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u5a5aj.pdf" title="STM32U5Axxx Datasheet"/>
 
         <memory name="SRAM1235"     access="rwx" start="0x20000000" size="0x00270000" default="1" init="0" />
         <memory name="SRAM_GFXMM"   access="rwx" start="0x24000000" size="0x01000000" default="1" init="0" />
@@ -1195,7 +1196,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U575xx"/>
         <debug svd="CMSIS/SVD/STM32U575.svd"/>
 
-        <book name="Documentation/DS13737.pdf" title="STM32U575xx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u575ag.pdf" title="STM32U575xx Datasheet"/>
 
         <memory name="SRAM1_2" access="rwx" start="0x20000000" size="0x00040000" default="1" init="0" />
         <memory name="SRAM3"   access="rwx" start="0x20040000" size="0x00080000" default="0" init="0" />
@@ -1417,7 +1418,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U585xx"/>
         <debug svd="CMSIS/SVD/STM32U585.svd"/>
 
-        <book name="Documentation/DS13086.pdf" title="STM32U585xx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u585ai.pdf" title="STM32U585xx Datasheet"/>
 
         <memory name="SRAM1_2" access="rwx" start="0x20000000" size="0x00040000" default="1" init="0" />
         <memory name="SRAM3"   access="rwx" start="0x20040000" size="0x00080000" default="0" init="0" />
@@ -1534,7 +1535,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U535xx"/>
         <debug svd="CMSIS/SVD/STM32U535.svd"/>
 
-        <book name="Documentation/DS14217.pdf" title="STM32U535xx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u535cb.pdf" title="STM32U535xx Datasheet"/>
 
         <memory name="SRAM12"  access="rwx" start="0x20000000" size="0x00040000" default="1" init="0" />
         <memory name="SRAM3"   access="rwx" start="0x28000000" size="0x00004000" default="0" init="0" />
@@ -1783,7 +1784,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         <compile define="STM32U545xx"/>
         <debug svd="CMSIS/SVD/STM32U545.svd"/>
 
-        <book name="Documentation/DS14216.pdf" title="STM32U545xx Datasheet"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32u545ce.pdf" title="STM32U545xx Datasheet"/>
 
         <memory name="SRAM1_2" access="rwx" start="0x20000000" size="0x00040000" default="1" init="0" />
         <memory name="SRAM3"   access="rwx" start="0x28000000" size="0x00004000" default="0" init="0" />
@@ -1919,7 +1920,7 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
         #define CMSIS_device_header "stm32u5xx.h"
       </RTE_Components_h>
       <files>
-        <file category="doc" name="https://github.com/Open-CMSIS-Pack/cmsis-toolbox/tree/main/docs/CubeMX.md"/>
+        <file category="doc" name="https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md"/>
       </files>
     </component>
 
