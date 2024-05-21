@@ -26,6 +26,27 @@
       - Remove CMSIS WiFi_EMW3080 driver
       Remove examples
     </release>
+    <release version="1.1.0" date="2024-04-10">
+      Synchronized with STM32CubeU5 Firmware Package version V1.2.0
+      Synchronized with CMSIS v6
+      Pack Description:
+      - Updated schemaVersion (1.7.28)
+      - Added LICENSE file
+      - Added external memory information
+      Drivers:
+      - CMSIS-Driver VIO updated to API 1.0.0
+      - Updated requirements for USB Power Delivery driver
+      Example projects:
+      - CMSIS-RTOS2 Blinky:
+      -- Updated CubeMx configuration to latest CubeMx
+      - CMSIS-RTOS2 Platform:
+      -- Updated CubeMx configuration to latest CubeMx
+      -- Enabled USB Device driver, USB PD BSP driver and necessary components
+      -- Enabled Environmental Sensors BSP driver and necessary components
+      - Middleware examples:
+      -- Added USB Device: HID, Mass Storage and Virtual COM examples
+      -- Added USB Host: Keyboard and Mass Storage examples
+    </release>
     <release version="1.0.0" date="2022-05-30">
       Board description and documentation for B-U585I-IOT02A
       Synchronized with STM32CubeU5 Firmware Package version V1.1.0
