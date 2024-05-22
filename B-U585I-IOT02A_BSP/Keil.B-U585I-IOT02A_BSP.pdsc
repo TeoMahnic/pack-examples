@@ -15,6 +15,7 @@
   <releases>
     <release version="2.0.0-dev1">
       Updated for new CMSIS-Toolbox CubeMX integration
+      Replace examples with csolution based Blinky
       Pack Description:
       - Add LICENSE file
       - Update schemaVersion (1.7.36)
@@ -153,4 +154,14 @@
       <debugProbe connector="Micro-USB" debugClock="10000000" debugLink="swd" name="ST-Link"/>
     </board>
   </boards>
+
+  <examples>
+    <example name="Blinky" folder="Examples/Blinky" doc="README.md">
+      <description>CMSIS-RTOS2 Blinky example with VIO</description>
+      <board name="B-U585I-IOT02A" vendor="STMicroelectronics"/>
+      <project>
+        <environment name="csolution" load="Blinky.csolution.yml"/>
+      </project>
+    </example>
+  </examples>
 </package>
