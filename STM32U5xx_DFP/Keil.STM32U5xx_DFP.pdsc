@@ -24,6 +24,8 @@
       - Remove compile device header from device description
       - Remove not used conditions
       - Replace documentation files with permalinks
+      CMSIS-Driver:
+      - Add GPIO driver
     </release>
     <release version="2.2.2-dev0">
       CMSIS Device:
@@ -1929,6 +1931,15 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
            The following drivers will be removed and be superseded by generic 
            drivers based on STMicroelectronics HAL provided in a separate pack.
     -->
+    <component Cclass="CMSIS Driver" Cgroup="GPIO" Capiversion="1.0.0" Cversion="1.0.0" condition="STM32U5 CMSIS CubeMX">
+      <description>GPIO Driver for STM32U5 Series</description>
+      <RTE_Components_h>
+        #define RTE_Drivers_GPIO0               /* Driver GPIO0 */
+      </RTE_Components_h>
+      <files>
+        <file category="source" name="CMSIS/Driver/GPIO_STM32.c"/>
+      </files>
+    </component>
     <component Cclass="CMSIS Driver" Cgroup="I2C" Capiversion="2.2.0" Cversion="1.1.0" condition="STM32U5 CMSIS CubeMX">
       <description>I2C Driver for STM32U5 Series</description>
       <RTE_Components_h>
