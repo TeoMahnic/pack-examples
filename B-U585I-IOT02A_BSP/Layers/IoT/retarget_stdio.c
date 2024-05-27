@@ -64,6 +64,11 @@ int stdio_init (void) {
     return -1;
   }
 
+  if (ptrUSART->Control(ARM_USART_CONTROL_TX, 1U) != ARM_DRIVER_OK) {
+    return -1;
+  }
+
+
   return 0;
 }
 
