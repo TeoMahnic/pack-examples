@@ -26,10 +26,8 @@
       - Replace documentation files with permalinks
       CMSIS-Driver:
       - Add GPIO driver
-    </release>
-    <release version="2.2.2-dev0">
       CMSIS Device:
-      - Updated SVD files.
+      - Updated SVD files
     </release>
     <release version="2.2.1" date="2024-02-22">
       STM32CubeMX integration:
