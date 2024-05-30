@@ -31,6 +31,6 @@
 #define ARDUINO_UNO_UART    3
 
 // CMSIS Driver instances of Board peripherals
-#define CMSIS_DRIVER_USBD   0  // instance of CMSIS-Driver USB Device
+#define CMSIS_DRIVER_USBD   0     // CMSIS-Driver USB Device instance number
 
 #endif /* B_U585I_IOT02A_H_ */

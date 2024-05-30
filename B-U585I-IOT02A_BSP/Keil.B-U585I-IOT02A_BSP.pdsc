@@ -104,8 +104,8 @@
     </component>
   </components>
 
-  <csolution> 
-    <clayer type="Board" path="Layers/IoT" file="Board.clayer.yml" copy-to="Board/B-U585I-IOT02A" condition="B-U585I-IOT02A"/>
+  <csolution>
+    <clayer type="Board" path="Layers/usbd" file="Board.clayer.yml" copy-to="Board/B-U585I-IOT02A" condition="B-U585I-IOT02A"/>
   </csolution>
 
   <boards>
