@@ -15,17 +15,16 @@
   <releases>
     <release version="2.0.0-dev1">
       Updated for new CMSIS-Toolbox CubeMX integration
-      Replace examples with csolution based Blinky
+      Replaced examples with csolution based Blinky
       Pack Description:
-      - Add LICENSE file
-      - Update schemaVersion (1.7.36)
-      - Add external memory information to board description
-      - Add board layer
-      Remove BSP drivers
+      - Added LICENSE file
+      - Updated schemaVersion (1.7.36)
+      - Added external memory information to board description
+      - Added board layer
+      Removed BSP drivers
       CMSIS Drivers:
-      - Update VIO driver to API 1.0.0
-      - Remove CMSIS WiFi_EMW3080 driver
-      Remove examples
+      - Updated VIO driver to API 1.0.0
+      - Removed CMSIS WiFi_EMW3080 driver
     </release>
     <release version="1.1.0" date="2024-04-10">
       Synchronized with STM32CubeU5 Firmware Package version V1.2.0

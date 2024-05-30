@@ -1,6 +1,6 @@
 /******************************************************************************
  * File Name   : MX_Device.h
- * Date        : 26/04/2024 00:23:13
+ * Date        : 28/05/2024 12:09:00
  * Description : STM32Cube MX parameter definitions
  * Note        : This file is generated with a generator out of the
  *               STM32CubeMX project and its generated files (DO NOT EDIT!)
@@ -44,8 +44,8 @@
 #define MX_I2C2                                 1
 
 /* Filter Settings */
-#define MX_I2C2_DNF                             0
 #define MX_I2C2_ANF_ENABLE                      1
+#define MX_I2C2_DNF                             0
 
 /* Pins */
 
@@ -67,6 +67,38 @@
 #define MX_I2C2_SDA_GPIO_Speed                  GPIO_SPEED_FREQ_LOW
 #define MX_I2C2_SDA_GPIO_AF                     GPIO_AF4_I2C2
 
+/*------------------------------ SPI1           -----------------------------*/
+#define MX_SPI1                                 1
+
+/* Pins */
+
+/* SPI1_MISO */
+#define MX_SPI1_MISO_Pin                        PE14
+#define MX_SPI1_MISO_GPIO_Pin                   GPIO_PIN_14
+#define MX_SPI1_MISO_GPIOx                      GPIOE
+#define MX_SPI1_MISO_GPIO_Mode                  GPIO_MODE_AF_PP
+#define MX_SPI1_MISO_GPIO_PuPd                  GPIO_NOPULL
+#define MX_SPI1_MISO_GPIO_Speed                 GPIO_SPEED_FREQ_HIGH
+#define MX_SPI1_MISO_GPIO_AF                    GPIO_AF5_SPI1
+
+/* SPI1_MOSI */
+#define MX_SPI1_MOSI_Pin                        PE15
+#define MX_SPI1_MOSI_GPIO_Pin                   GPIO_PIN_15
+#define MX_SPI1_MOSI_GPIOx                      GPIOE
+#define MX_SPI1_MOSI_GPIO_Mode                  GPIO_MODE_AF_PP
+#define MX_SPI1_MOSI_GPIO_PuPd                  GPIO_NOPULL
+#define MX_SPI1_MOSI_GPIO_Speed                 GPIO_SPEED_FREQ_HIGH
+#define MX_SPI1_MOSI_GPIO_AF                    GPIO_AF5_SPI1
+
+/* SPI1_SCK */
+#define MX_SPI1_SCK_Pin                         PE13
+#define MX_SPI1_SCK_GPIO_Pin                    GPIO_PIN_13
+#define MX_SPI1_SCK_GPIOx                       GPIOE
+#define MX_SPI1_SCK_GPIO_Mode                   GPIO_MODE_AF_PP
+#define MX_SPI1_SCK_GPIO_PuPd                   GPIO_NOPULL
+#define MX_SPI1_SCK_GPIO_Speed                  GPIO_SPEED_FREQ_HIGH
+#define MX_SPI1_SCK_GPIO_AF                     GPIO_AF5_SPI1
+
 /*------------------------------ SPI2           -----------------------------*/
 #define MX_SPI2                                 1
 
@@ -78,7 +110,7 @@
 #define MX_SPI2_MISO_GPIOx                      GPIOD
 #define MX_SPI2_MISO_GPIO_Mode                  GPIO_MODE_AF_PP
 #define MX_SPI2_MISO_GPIO_PuPd                  GPIO_NOPULL
-#define MX_SPI2_MISO_GPIO_Speed                 GPIO_SPEED_FREQ_LOW
+#define MX_SPI2_MISO_GPIO_Speed                 GPIO_SPEED_FREQ_HIGH
 #define MX_SPI2_MISO_GPIO_AF                    GPIO_AF5_SPI2
 
 /* SPI2_MOSI */
@@ -87,17 +119,8 @@
 #define MX_SPI2_MOSI_GPIOx                      GPIOD
 #define MX_SPI2_MOSI_GPIO_Mode                  GPIO_MODE_AF_PP
 #define MX_SPI2_MOSI_GPIO_PuPd                  GPIO_NOPULL
-#define MX_SPI2_MOSI_GPIO_Speed                 GPIO_SPEED_FREQ_LOW
+#define MX_SPI2_MOSI_GPIO_Speed                 GPIO_SPEED_FREQ_HIGH
 #define MX_SPI2_MOSI_GPIO_AF                    GPIO_AF5_SPI2
-
-/* SPI2_NSS */
-#define MX_SPI2_NSS_Pin                         PB12
-#define MX_SPI2_NSS_GPIO_Pin                    GPIO_PIN_12
-#define MX_SPI2_NSS_GPIOx                       GPIOB
-#define MX_SPI2_NSS_GPIO_Mode                   GPIO_MODE_AF_PP
-#define MX_SPI2_NSS_GPIO_PuPd                   GPIO_NOPULL
-#define MX_SPI2_NSS_GPIO_Speed                  GPIO_SPEED_FREQ_LOW
-#define MX_SPI2_NSS_GPIO_AF                     GPIO_AF5_SPI2
 
 /* SPI2_SCK */
 #define MX_SPI2_SCK_Pin                         PD1
@@ -105,7 +128,7 @@
 #define MX_SPI2_SCK_GPIOx                       GPIOD
 #define MX_SPI2_SCK_GPIO_Mode                   GPIO_MODE_AF_PP
 #define MX_SPI2_SCK_GPIO_PuPd                   GPIO_NOPULL
-#define MX_SPI2_SCK_GPIO_Speed                  GPIO_SPEED_FREQ_LOW
+#define MX_SPI2_SCK_GPIO_Speed                  GPIO_SPEED_FREQ_HIGH
 #define MX_SPI2_SCK_GPIO_AF                     GPIO_AF5_SPI2
 
 /*------------------------------ UART4          -----------------------------*/
@@ -158,6 +181,33 @@
 #define MX_USART1_TX_GPIO_Speed                 GPIO_SPEED_FREQ_LOW
 #define MX_USART1_TX_GPIO_AF                    GPIO_AF7_USART1
 
+/*------------------------------ USART3         -----------------------------*/
+#define MX_USART3                               1
+
+/* Virtual mode */
+#define MX_USART3_VM                            VM_ASYNC
+#define MX_USART3_VM_ASYNC                      1
+
+/* Pins */
+
+/* USART3_RX */
+#define MX_USART3_RX_Pin                        PD9
+#define MX_USART3_RX_GPIO_Pin                   GPIO_PIN_9
+#define MX_USART3_RX_GPIOx                      GPIOD
+#define MX_USART3_RX_GPIO_Mode                  GPIO_MODE_AF_PP
+#define MX_USART3_RX_GPIO_PuPd                  GPIO_NOPULL
+#define MX_USART3_RX_GPIO_Speed                 GPIO_SPEED_FREQ_MEDIUM
+#define MX_USART3_RX_GPIO_AF                    GPIO_AF7_USART3
+
+/* USART3_TX */
+#define MX_USART3_TX_Pin                        PD8
+#define MX_USART3_TX_GPIO_Pin                   GPIO_PIN_8
+#define MX_USART3_TX_GPIOx                      GPIOD
+#define MX_USART3_TX_GPIO_Mode                  GPIO_MODE_AF_PP
+#define MX_USART3_TX_GPIO_PuPd                  GPIO_NOPULL
+#define MX_USART3_TX_GPIO_Speed                 GPIO_SPEED_FREQ_MEDIUM
+#define MX_USART3_TX_GPIO_AF                    GPIO_AF7_USART3
+
 /*------------------------------ USB_OTG_FS     -----------------------------*/
 #define MX_USB_OTG_FS                           1
 
@@ -176,7 +226,7 @@
 #define MX_USB_OTG_FS_DM_GPIOx                  GPIOA
 #define MX_USB_OTG_FS_DM_GPIO_Mode              GPIO_MODE_AF_PP
 #define MX_USB_OTG_FS_DM_GPIO_PuPd              GPIO_NOPULL
-#define MX_USB_OTG_FS_DM_GPIO_Speed             GPIO_SPEED_FREQ_LOW
+#define MX_USB_OTG_FS_DM_GPIO_Speed             GPIO_SPEED_FREQ_HIGH
 #define MX_USB_OTG_FS_DM_GPIO_AF                GPIO_AF10_USB
 
 /* USB_OTG_FS_DP */
@@ -185,7 +235,7 @@
 #define MX_USB_OTG_FS_DP_GPIOx                  GPIOA
 #define MX_USB_OTG_FS_DP_GPIO_Mode              GPIO_MODE_AF_PP
 #define MX_USB_OTG_FS_DP_GPIO_PuPd              GPIO_NOPULL
-#define MX_USB_OTG_FS_DP_GPIO_Speed             GPIO_SPEED_FREQ_LOW
+#define MX_USB_OTG_FS_DP_GPIO_Speed             GPIO_SPEED_FREQ_HIGH
 #define MX_USB_OTG_FS_DP_GPIO_AF                GPIO_AF10_USB
 
 #endif  /* MX_DEVICE_H__ */
