@@ -16,6 +16,7 @@
       Updated for new CMSIS-Toolbox CubeMX integration
       Remove STM32CubeMX_FW_U5
       Remove previous generator (gpdsc)
+      Remove CMSIS drivers
       Add new global generator
       Package Description (pdsc):
       - Remove Device:Startup component
@@ -24,8 +25,6 @@
       - Remove compile device header from device description
       - Remove not used conditions
       - Replace documentation files with permalinks
-      CMSIS-Driver:
-      - Add GPIO driver
       CMSIS Device:
       - Updated SVD files
     </release>
