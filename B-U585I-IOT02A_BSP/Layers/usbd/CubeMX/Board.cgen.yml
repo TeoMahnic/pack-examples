@@ -10,7 +10,7 @@ generator-import:
     - ./STM32CubeMX/Drivers/STM32U5xx_HAL_Driver/Inc/Legacy
     - ./STM32CubeMX/Drivers/CMSIS/Device/ST/STM32U5xx/Include
     - ./STM32CubeMX/Inc
-    - ./MX_Device/Board
+    - ./MX_Device
   groups:
     - group: CubeMX
       files:
