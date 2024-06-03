@@ -1902,13 +1902,6 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
       <require Cclass="CMSIS" Cgroup="CORE"/>
     </condition>
 
-    <!-- CMSIS Driver Conditions -->
-    <condition id="STM32U5 CMSIS CubeMX">
-      <description>Requirement for CMSIS Driver</description>
-      <require condition="STM32U5 CMSIS"/>
-      <require Cclass="Device" Cgroup="CubeMX"/>
-    </condition>
-
   </conditions>
 
   <components>
@@ -1924,100 +1917,19 @@ Offering up to 2 Mbytes of Flash (dual bank) memory and 786 Kbytes of SRAM, the 
       </files>
     </component>
 
-    <!-- CMSIS drivers -->
-    <!-- Note:
-           The following drivers will be removed and be superseded by generic 
-           drivers based on STMicroelectronics HAL provided in a separate pack.
-    -->
-    <component Cclass="CMSIS Driver" Cgroup="GPIO" Capiversion="1.0.0" Cversion="1.0.0" condition="STM32U5 CMSIS CubeMX">
-      <description>GPIO Driver for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_GPIO0               /* Driver GPIO0 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/GPIO_STM32.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="I2C" Capiversion="2.2.0" Cversion="1.1.0" condition="STM32U5 CMSIS CubeMX">
-      <description>I2C Driver for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_I2C1                /* Driver I2C1 */
-        #define RTE_Drivers_I2C2                /* Driver I2C2 */
-        #define RTE_Drivers_I2C3                /* Driver I2C3 */
-        #define RTE_Drivers_I2C4                /* Driver I2C4 */
-        #define RTE_Drivers_I2C5                /* Driver I2C5 */
-        #define RTE_Drivers_I2C6                /* Driver I2C6 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/I2C_STM32U5xx.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="MCI" Capiversion="2.2.0" Cversion="1.0.0" condition="STM32U5 CMSIS CubeMX">
-      <description>MCI Driver for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_MCI0                /* Driver MCI0 */
-        #define RTE_Drivers_MCI1                /* Driver MCI1 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/MCI_STM32U5xx.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="SPI" Capiversion="2.1.0" Cversion="1.1.0" condition="STM32U5 CMSIS CubeMX">
-      <description>SPI Driver for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_SPI1                /* Driver SPI1 */
-        #define RTE_Drivers_SPI2                /* Driver SPI2 */
-        #define RTE_Drivers_SPI3                /* Driver SPI3 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/SPI_STM32U5xx.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="USART" Capiversion="2.1.0" Cversion="1.2.0" condition="STM32U5 CMSIS CubeMX">
-      <description>USART Driver for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_USART1              /* Driver USART1 */
-        #define RTE_Drivers_USART2              /* Driver USART2 */
-        #define RTE_Drivers_USART3              /* Driver USART3 */
-        #define RTE_Drivers_USART4              /* Driver USART4 */
-        #define RTE_Drivers_USART5              /* Driver USART5 */
-        #define RTE_Drivers_USART6              /* Driver USART6 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/UART_STM32U5xx.c"/>
-        <file category="source" name="CMSIS/Driver/USART_STM32U5xx.c"/>
-        <file category="source" name="CMSIS/Driver/IrDA_STM32U5xx.c"/>
-        <file category="source" name="CMSIS/Driver/SmartCard_STM32U5xx.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="USB Device" Csub="Full-speed" Capiversion="2.3.0" Cversion="1.1.0" condition="STM32U5 CMSIS CubeMX">
-      <description>USB Device Full-Speed Driver (OTG) for STM32U5 Series</description>
-      <RTE_Components_h>  <!-- the following content goes into file 'RTE_Components.h' -->
-        #define RTE_Drivers_USBD0               /* Driver USBD0 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/OTG_STM32U5xx.c"/>
-        <file category="source" name="CMSIS/Driver/USBD_OTG_STM32U5xx.c"/>
-      </files>
-    </component>
-    <component Cclass="CMSIS Driver" Cgroup="USB Host" Csub="Full-speed" Capiversion="2.3.0" Cversion="1.1.0" condition="STM32U5 CMSIS CubeMX">
-      <description>USB Host Full-Speed Driver (OTG) for STM32U5 Series</description>
-      <RTE_Components_h>
-        #define RTE_Drivers_USBH0               /* Driver USBH0 */
-      </RTE_Components_h>
-      <files>
-        <file category="source" name="CMSIS/Driver/OTG_STM32U5xx.c"/>
-        <file category="source" name="CMSIS/Driver/USBH_OTG_STM32U5xx.c"/>
-      </files>
-    </component>
   </components>
 
   <csolution>
+    <!-- CubeMX Basic csolution project template -->
     <template name="CubeMX Basic csolution project" path="Templates/CubeMX" file="CubeMX.csolution.yml" condition="STM32U5">
       <description>Create a CubeMX basic solution with project</description>
     </template>
+
+    <!-- CubeMX TrustZone csolution project template -->
     <template name="CubeMX TrustZone csolution project" path="Templates/CubeMX_TZ" file="CubeMX_TZ.csolution.yml" condition="STM32U5">
       <description>Create a CubeMX TrustZone solution with secure and non-secure projects</description>
     </template>
+
   </csolution>
+
 </package>
