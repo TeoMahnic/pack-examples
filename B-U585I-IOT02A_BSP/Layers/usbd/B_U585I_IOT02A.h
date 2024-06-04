@@ -32,5 +32,6 @@
 
 // CMSIS Driver instances of Board peripherals
 #define CMSIS_DRIVER_USBD   0     // CMSIS-Driver USB Device instance number
+#define CMSIS_DRIVER_USART  2     // CMSIS-Driver USART instance number
 
 #endif /* B_U585I_IOT02A_H_ */

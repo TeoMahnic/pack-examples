@@ -15,7 +15,7 @@ layer:
     - connect: B-U585I-IOT02A Board
       provides:
         - CMSIS_USB_Device: 0
-        - CMSIS_UART: 3
+        - CMSIS_USART: 2
         - CMSIS_VIO
         - ARDUINO_UNO_UART: 3
         - ARDUINO_UNO_SPI: 1
