@@ -64,6 +64,7 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 void SystemClock_Config(void);
 static void SystemPower_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_ADF1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_ICACHE_Init(void);
@@ -72,9 +73,8 @@ static void MX_OCTOSPI2_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_UART4_Init(void);
 static void MX_USART1_UART_Init(void);
-static void MX_ADF1_Init(void);
-static void MX_USB_OTG_FS_PCD_Init(void);
 static void MX_UCPD1_Init(void);
+static void MX_USB_OTG_FS_PCD_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -116,6 +116,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_ADF1_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
   MX_ICACHE_Init();
@@ -124,15 +125,11 @@ int main(void)
   MX_SPI2_Init();
   MX_UART4_Init();
   MX_USART1_UART_Init();
-  MX_ADF1_Init();
-  MX_USB_OTG_FS_PCD_Init();
   MX_UCPD1_Init();
+  MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
   stdio_init();                         /* Initialize STDIO */
-
   app_main();                           /* Application */
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
